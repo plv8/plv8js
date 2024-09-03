@@ -4,7 +4,7 @@ PLV8 is a _trusted_ Javascript language extension for PostgreSQL. It can be
 used for _stored procedures_, _triggers_, etc.
 
 PLV8 works with most versions of Postgres, but works best with `13` and above,
-including `14`, `16`, and `16`.
+including `14`, `15`, and `16`.
 
 ## Installing PLV8
 
