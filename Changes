@@ -1,5 +1,9 @@
 Revision history for plv8
 
+3.2.3       2024-09-08
+            - automatic pgxn builds and pushes
+            - postgres 17 support
+
 3.2.2       2024-01-21
             - proper termination in cursors
 
