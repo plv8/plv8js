@@ -36,9 +36,8 @@ The following packages must be install to build on MacOS:
 Downloading the source code is very straightforward:
 
 ```
-$ wget https://github.com/plv8/plv8/archive/v3.0.0.tar.gz
-$ tar -xvzf v3.0.0.tar.gz
-$ cd plv8-3.0.0
+$ git clone https://github.com/plv8/plv8
+$ cd plv8
 $ make
 ```
 
@@ -71,26 +70,6 @@ By default, the execution timeout is not compiled, but when configured it has a
 timeout of 300 seconds (5 minutes). You can override this by setting the
 `plv8.execution_timeout` variable. It can be set between `1` second and `65536`
 seconds, but cannot be disabled.
-
-### Building with ICU
-
-Building with ICU requires you to enable ICU in your build process:
-
-```
-$ make USE_ICU=1
-```
-
-If you build with ICU, you will need to install the correct ICU file, located in
-`contrib/icu`.
-
-- icudtl.dat - Little Endian architectures (Intel)
-- icudtb.dat - Big Endian architectures (Sparc)
-
-For ARM, you will need to figure out which Endianess your hardware and OS is
-configured for.
-
-NOTE: it is important that the user that Postgres is started with has read
-access to the file.
 
 ### Installing
 
